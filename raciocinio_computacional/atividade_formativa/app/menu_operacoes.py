@@ -24,16 +24,12 @@ def menu_operacoes(opcao):
       estudantes(opcao)
   elif(selecao == 3):
     opcao = "Atualização"
-    limpar_console()
-    print('EM DESENVOLVIMENTO')
-    input('Pressione ENTER para continuar.')
-    menu_operacoes()
+    if(area == "Estudantes"):
+      estudantes(opcao)
   elif(selecao == 4):
-    opcao = "Exclusao"
-    limpar_console()
-    print('EM DESENVOLVIMENTO')
-    input('Pressione ENTER para continuar.')
-    menu_operacoes()
+    opcao = "Exclusão"
+    if(area == "Estudantes"):
+      estudantes(opcao)
   elif(selecao == 9):
     opcao = "Voltar ao Menu Princial"
     return
